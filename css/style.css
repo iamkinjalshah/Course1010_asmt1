@@ -1,0 +1,137 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #d5d5d5;
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1100px !important;
+	}
+}
+
+.image-hover-effect h2 {
+	font-size: 15px;
+	color: #000;
+	padding-left: 15px;
+}
+
+.image-hover-effect h2 span {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.image-hover-effect p {
+	font-size: 15px;
+	color: #5f6059;
+	padding-left: 15px;
+}
+
+.image-hover-effect p span {
+	font-weight: bold;
+}
+
+.image-area-div {
+	position: relative;
+	width: 100%;
+}
+
+.image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+}
+
+.image-area-div:hover .overlay {
+	opacity: 1;
+	background-image: url(../assets/transparent-image.png);
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: .5s ease;
+}
+
+.text {
+	color: white;
+	font-size: 15px;
+	position: absolute;
+	top: 20%;
+	left: 15%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: left;
+	padding: 20px;
+	margin-left: 15px;
+}
+
+.text p {
+	color: #000 !important;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.text p.small-text {
+	font-size: 10px;
+	text-align: left;
+}
+
+.image-area-div-2:hover .overlay {
+	opacity: 1;
+	background-image: url(../assets/transparent-image-3.png);
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: .5s ease;
+}
+
+.padding {
+	margin-bottom: 30px;
+}
+
+.social-icon {
+	margin-top: 15px;
+}
+
+.social-icon ul {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+.social-icon ul li {
+	display: inline-block;
+}
+
+.social-icon ul li a {
+	padding: 0px 8px;
+	color: #000;
+	font-size: 16px;
+}
+
+.social-icon ul li a:hover {
+	color: #5f6059;
+}
+
+.image-area-div-2 .text{top: 12%;  left: 18%;}
+
+
+
+@media (min-width:320px) and (max-width:991px) {
+	.image-area-div {margin-bottom: 30px;}
+}
